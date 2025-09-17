@@ -1,4 +1,5 @@
 <h1>Website Theme Switcher</h1>
+<p><i>“Your website changes mood with your day — from sunrise to sunset.”</i></p>
 <p>A responsive website built with HTML, CSS, and JavaScript that automatically switches its theme based on your location and local time. Using latitude and longitude, the site detects your timezone and applies one of four unique themes:
 <br><li> Light Theme for daytime ☀️
 <br><li> Dark Theme for nighttime 🌙
