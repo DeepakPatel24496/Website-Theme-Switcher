@@ -1,0 +1,146 @@
+.theme-light{
+    --primary: white;
+    --secondary: whitesmoke;
+    --accent: #54c75b;
+    --font-color: black;
+    --pure: white;
+    --my-image: url('hero-image-1.jpg');
+}
+
+.theme-dark{
+    --primary: #121212;
+    --secondary: #0b0b0b;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure: #fff;
+    --my-image: url('hero-image-2.jpg');
+}
+
+.theme-ocean{
+    --primary: #252c35;
+    --secondary: #20272e;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure: #fff;
+    --my-image: url('hero-image-3.jpg');
+}
+
+.theme-sepia{
+    --primary: #fbf1c7;
+    --secondary: #eadfb5;
+    --accent: #704214;
+    --font-color: #704214;
+    --pure: #fff;
+    --my-image: url('hero-image-4.jpg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-Smoothing: antialiased;
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    font-optical-sizing: auto;
+    background-color: var(--primary);
+    color: var(--font-color);
+    transition: 2s;
+
+}
+
+.container{
+    width: 1350px;
+    max-width: 90%;
+    margin: 0 auto;
+     
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+nav .logo{
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li a{
+    font-weight: 700;
+    /* font-size: 1rem; */
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+}
+
+nav ul li select{
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    padding: 2px 10px;
+    outline: none;
+    color: var(--font-color);
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 5px;
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    width: 100%;
+}
+
+header .hero-image{
+    background-image: var(--my-image);
+    width: calc(100% - 1.5rem);
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    margin-left: 50px;
+    background-size: cover;
+    transition: 2s;
+    aspect-ratio: 16 / 9; 
+}
+
+header h1{
+    font-size: 2.8rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+header p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+header button{
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-transform: uppercase;
+
+}
